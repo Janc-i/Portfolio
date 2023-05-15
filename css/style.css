@@ -1419,6 +1419,17 @@ body::-webkit-scrollbar-thumb {
 .article5 p a:visited {
   color: inherit;
 }
+.article5 .inspect {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.article5 .inspect a {
+  color: inherit;
+}
+.article5 .inspect a:visited {
+  color: inherit;
+}
 
 #visitors .main article {
   display: flex;

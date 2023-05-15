@@ -345,6 +345,10 @@ include('visits.php');
                       target="_blank"
                       >design</a
                     >.
+                    <p class="inspect"><i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="hoverElement" href="https://github.com/Janc-i/Portfolio" target="_blank">Inspect Source Code</a>
+                    </p>
+                    
                   </p>
                 </article>
               </section>
