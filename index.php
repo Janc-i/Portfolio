@@ -314,7 +314,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>4823<br />Lines of HTML/CSS Code</p>
+                    <p>4838<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
