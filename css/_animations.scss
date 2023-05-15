@@ -1,0 +1,628 @@
+//loading animation
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--text-white);
+
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.hideLoader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: var(--text-mood);
+  background-color: #6ccacb;
+  border-radius: 50%;
+  -webkit-animation: zoomDark 2.5s ease-in-out infinite;
+  animation: zoomDark 2.5s ease-in-out infinite;
+}
+
+.ball2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: var(--text-mood);
+  background-color: #6ccacb;
+  border-radius: 50%;
+  -webkit-animation: zoomLight 2.5s ease-in-out infinite;
+  animation: zoomLight 2.5s ease-in-out infinite;
+}
+@-webkit-keyframes zoomDark {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomDark {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoomLight {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+@keyframes zoomLight {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+//---------------------------------------------
+//page after load animation
+.afterLoadAnimation {
+  .navigationPanel {
+    opacity: 0;
+    z-index: 3;
+    -webkit-animation: navigationPanelLoad 0.3s
+      cubic-bezier(0.42, 0, 0.66, 1.41) forwards 0.3s;
+    animation: navigationPanelLoad 0.3s cubic-bezier(0.42, 0, 0.66, 1.41)
+      forwards 0.3s;
+  }
+
+  @-webkit-keyframes navigationPanelLoad {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes navigationPanelLoad {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .card {
+    -webkit-animation: cardLoad 0.2s ease-out;
+    animation: cardLoad 0.2s ease-out;
+  }
+
+  @-webkit-keyframes cardLoad {
+    0% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes cardLoad {
+    0% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.3;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .description {
+    z-index: -1;
+
+    -webkit-animation: descriptionLoad 0.4s ease-out;
+
+    animation: descriptionLoad 0.4s ease-out;
+  }
+
+  @-webkit-keyframes descriptionLoad {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.1;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes descriptionLoad {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.1;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .background {
+    -webkit-animation: backgroundLoad 0.6s ease-out;
+    animation: backgroundLoad 0.6s ease-out;
+  }
+
+  @-webkit-keyframes backgroundLoad {
+    0% {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 0.4;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes backgroundLoad {
+    0% {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 0.4;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//cursor
+.cursorCircle {
+  display: block;
+  display: none;
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 1px solid;
+  pointer-events: none;
+  transform: scale(0.4);
+  transition: transform 0.4s, border-color 0.4s, background-color 0.4s;
+  z-index: 4;
+}
+
+// decscription change animation------------------------------------------------
+.fadeInAnimation {
+  -webkit-animation: fadeIn 1s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
+  -webkit-animation: fadeIn 1s cubic-bezier(0, 0.33, 0, 0.98) forwards;
+  animation: fadeIn 1s cubic-bezier(0, 0.33, 0, 0.98) forwards;
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      visibility: hidden;
+      transform: translateX(-100%) translateY(-100%);
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0) translateY(-100%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      visibility: hidden;
+      transform: translateX(-100%) translateY(-100%);
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0) translateY(-100%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.fadeOutAnimation {
+  -webkit-animation: fadeOut 1s ease-in forwards;
+  animation: fadeOut 1s ease-in forwards;
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      visibility: visible;
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-100%) translateY(0);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      visibility: visible;
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-100%) translateY(0);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+.fadeInAnimation2 {
+  -webkit-animation: fadeIn2 1s ease-out forwards;
+  animation: fadeIn2 1s ease-out forwards;
+  -webkit-animation: fadeIn2 1s cubic-bezier(0, 0.33, 0, 0.98) forwards;
+  animation: fadeIn2 1s cubic-bezier(0, 0.33, 0, 0.98) forwards;
+
+  @-webkit-keyframes fadeIn2 {
+    0% {
+      visibility: hidden;
+      transform: translateX(-100%) translateY(0);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes fadeIn2 {
+    0% {
+      visibility: hidden;
+      transform: translateX(-100%) translateY(0);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.fadeOutAnimation2 {
+  -webkit-animation: fadeOut2 1s ease-in forwards;
+  animation: fadeOut2 1s ease-in forwards;
+
+  @-webkit-keyframes fadeOut2 {
+    0% {
+      visibility: visible;
+      transform: translateX(0) translateY(-100%);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-100%) translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes fadeOut2 {
+    0% {
+      visibility: visible;
+      transform: translateX(0) translateY(-100%);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(-100%) translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+//---------------------------------------
+//background animation
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 4px;
+  border: 30px solid var(--text-white);
+}
+
+.bubble1 {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 20s linear infinite;
+  animation: animateBubbles 20s linear infinite;
+}
+.bubble2 {
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+
+  -webkit-animation: animateBubbles 35s linear infinite;
+
+  animation: animateBubbles 35s linear infinite;
+}
+.bubble3 {
+  position: absolute;
+  bottom: 10%;
+  left: 80%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 45s linear infinite;
+  animation: animateBubbles 45s linear infinite;
+}
+.bubble4 {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 38s linear infinite;
+  animation: animateBubbles 38s linear infinite;
+}
+.bubble5 {
+  position: absolute;
+  bottom: -20%;
+  left: 90%;
+  width: 230px;
+  height: 230px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 53s linear infinite;
+  animation: animateBubbles 53s linear infinite;
+}
+.bubble6 {
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+
+  -webkit-animation: animateBubbles 31s linear infinite;
+
+  animation: animateBubbles 31s linear infinite;
+}
+.bubble7 {
+  position: absolute;
+  bottom: 20%;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 42s linear infinite;
+  animation: animateBubbles 42s linear infinite;
+}
+.bubble8 {
+  position: absolute;
+  bottom: -20%;
+  left: 40%;
+  width: 180px;
+  height: 180px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 63s linear infinite;
+  animation: animateBubbles 63s linear infinite;
+}
+.bubble9 {
+  position: absolute;
+  bottom: 20%;
+  left: 90%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+
+  -webkit-animation: animateBubbles 24s linear infinite;
+
+  animation: animateBubbles 24s linear infinite;
+}
+.bubble10 {
+  position: absolute;
+  bottom: -10%;
+  left: 55%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 57s linear infinite;
+  animation: animateBubbles 57s linear infinite;
+}
+.bubble11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 41s linear infinite;
+  animation: animateBubbles 41s linear infinite;
+}
+.bubble12 {
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--text-white);
+  -webkit-animation: animateBubbles 23s linear infinite;
+  animation: animateBubbles 23s linear infinite;
+}
+.bubble13 {
+  position: absolute;
+  bottom: 40%;
+  left: 51%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+
+  -webkit-animation: animateBubbles 46s linear infinite;
+
+  animation: animateBubbles 46s linear infinite;
+}
+
+@-webkit-keyframes animateBubbles {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: var(--bubbles-opacity);
+  }
+  100% {
+    transform: scale(1.6) translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animateBubbles {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: var(--bubbles-opacity);
+  }
+  100% {
+    transform: scale(1.6) translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-mood);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-animation-name: particle;
+  animation-name: particle;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes particle {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--tx), var(--ty)) scale(0.1);
+    opacity: 0;
+  }
+}
+@keyframes particle {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--tx), var(--ty)) scale(0.1);
+    opacity: 0;
+  }
+}

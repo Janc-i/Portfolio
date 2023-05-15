@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="diceGame">DICE GAME</header>
+    <div class="wrapper">
+      <div class="container">
+        <div class="left">
+          <p class="winner1"></p>
+          <div class="player1Container playerContainer">
+            <div class="totalScore1 totalScore">
+              <header>Player 1</header>
+              <p>0</p>
+            </div>
+            <div class="currentScore1 currentScore">
+              <header>Current Score</header>
+              <p>0</p>
+            </div>
+          </div>
+        </div>
+        <div class="battlefield">
+          <div class="dice"></div>
+          <div class="buttons">
+            <button class="roll" onclick="roll();">ROLL DICE</button>
+            <button class="hold" onclick="hold();">HOLD SCORE</button>
+            <button class="newGame" onclick="newGame();">NEW GAME</button>
+          </div>
+        </div>
+        <div class="right">
+          <p class="winner2"></p>
+          <div class="player1Container">
+            <div class="totalScore2 totalScore">
+              <header>Player 2</header>
+              <p>0</p>
+            </div>
+            <div class="currentScore2 currentScore">
+              <header>Current Score</header>
+              <p>0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules">
+      <button class="rulesButton">show rules</button>
+      <p class="hide">
+        Roll the dice to accumulate current score. If you roll 1, you'll lose
+        your current score and your turn. If you want to prevent rolling 1,
+        simply press "hold score" button and your current score will be added to
+        your total score. Player with total score of 21 and more wins the game.
+      </p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

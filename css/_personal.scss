@@ -1,0 +1,410 @@
+.personal {
+  width: 100%;
+  .main {
+    * {
+      box-sizing: border-box;
+      p {
+        margin: 0;
+      }
+    }
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    article {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .oceanWrapper {
+        padding: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(
+            to right,
+            transparent,
+            var(--text-lightest-grey),
+            transparent
+          );
+        }
+
+        &:last-of-type {
+          margin-bottom: 50px;
+          &:after {
+            content: "";
+            background: none;
+          }
+        }
+      }
+      .oceanLeft {
+        font-weight: 500;
+        font-size: 14px;
+        position: relative;
+        color: var(--text-dark-grey);
+        width: calc(30% - 30px);
+        height: 100%;
+        text-align: left;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(to right, var(--text-mood), transparent);
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          top: -8px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(to right, var(--text-mood), transparent);
+        }
+      }
+      .oceanRight {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        .trait {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        .traitPercent {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 35%;
+          height: 6px;
+          background-color: var(--text-void);
+          span {
+            background-color: var(--text-mood);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+          }
+        }
+
+        p {
+          width: 30%;
+          font-size: 12px;
+          line-height: 0.5;
+          &:nth-of-type(1) {
+            text-align: right;
+            margin-right: 10px;
+          }
+          &:nth-of-type(2) {
+            text-align: left;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    //------------------------------------------
+    .openness {
+      .trait:nth-of-type(1) .traitPercent span {
+        margin-left: 0;
+      }
+      .trait:nth-of-type(2) .traitPercent span {
+        margin-left: 60px;
+      }
+      .trait:nth-of-type(3) .traitPercent span {
+        margin-left: 40px;
+      }
+      .trait:nth-of-type(4) .traitPercent span {
+        margin-left: 80px;
+      }
+      .trait:nth-of-type(5) .traitPercent span {
+        margin-left: 60px;
+      }
+    }
+    .conscientiousness {
+      .trait:nth-of-type(1) .traitPercent span {
+        margin-left: 80px;
+      }
+      .trait:nth-of-type(2) .traitPercent span {
+        margin-left: 40px;
+      }
+      .trait:nth-of-type(3) .traitPercent span {
+        margin-left: 60px;
+      }
+      .trait:nth-of-type(4) .traitPercent span {
+        margin-left: 80px;
+      }
+      .trait:nth-of-type(5) .traitPercent span {
+        margin-left: 80px;
+      }
+    }
+    .extraversion {
+      .trait:nth-of-type(1) .traitPercent span {
+        margin-left: -20px;
+      }
+      .trait:nth-of-type(2) .traitPercent span {
+        margin-left: 40px;
+      }
+      .trait:nth-of-type(3) .traitPercent span {
+        margin-left: -40px;
+      }
+      .trait:nth-of-type(4) .traitPercent span {
+        margin-left: -80px;
+      }
+      .trait:nth-of-type(5) .traitPercent span {
+        margin-left: 0px;
+      }
+    }
+    .agreeableness {
+      .trait:nth-of-type(1) .traitPercent span {
+        margin-left: 40px;
+      }
+      .trait:nth-of-type(2) .traitPercent span {
+        margin-left: 80px;
+      }
+      .trait:nth-of-type(3) .traitPercent span {
+        margin-left: 60px;
+      }
+      .trait:nth-of-type(4) .traitPercent span {
+        margin-left: 60px;
+      }
+      .trait:nth-of-type(5) .traitPercent span {
+        margin-left: 80px;
+      }
+    }
+    .neuroticism {
+      .trait:nth-of-type(1) .traitPercent span {
+        margin-left: -20px;
+      }
+      .trait:nth-of-type(2) .traitPercent span {
+        margin-left: -60px;
+      }
+      .trait:nth-of-type(3) .traitPercent span {
+        margin-left: 60px;
+      }
+      .trait:nth-of-type(4) .traitPercent span {
+        margin-left: 80px;
+      }
+      .trait:nth-of-type(5) .traitPercent span {
+        margin-left: 60px;
+      }
+    }
+  }
+  .softSkills {
+    article {
+      padding: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+
+      .textWrapper {
+        margin-top: -10px;
+        margin-bottom: 25px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        i {
+          color: var(--text-mood);
+          font-size: 30px;
+        }
+      }
+
+      .skillText {
+        position: relative;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 46px;
+        width: 60%;
+        color: var(--text-quote-grey);
+      }
+
+      .skills {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          &:nth-of-type(1) {
+            align-items: flex-end;
+            width: 40%;
+            .skillName {
+              position: relative;
+              padding-left: 5px;
+              &:before {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                top: 5px;
+                left: -5px;
+                background-color: var(--text-mood);
+                border-radius: 50%;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            height: 320px;
+            width: 20%;
+            font-size: 20px;
+            color: var(--text-mood);
+            justify-content: space-evenly;
+          }
+          &:nth-of-type(3) {
+            align-items: flex-start;
+            width: 40%;
+            .skillName {
+              position: relative;
+              padding-right: 5px;
+              &:after {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                top: 5px;
+                right: -5px;
+                background-color: var(--text-mood);
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+
+        .skillName {
+          margin-bottom: 16px;
+          padding: 0 5px;
+          transition: transform 0.4s;
+          cursor: help;
+          box-sizing: border-box;
+
+          &.activeSkill {
+            h4 {
+              color: var(--text-mood);
+            }
+          }
+
+          h4 {
+            position: relative;
+            font-size: 13px;
+            font-weight: 500;
+            transition: 0.4s;
+            margin: 0;
+            text-align: center;
+          }
+
+          p {
+            display: none;
+          }
+          &:hover h4 {
+            color: var(--text-mood);
+          }
+        }
+      }
+    }
+  }
+
+  .skillTextFade {
+    -webkit-animation: skillTextFade 0.9s ease;
+    animation: skillTextFade 0.9s ease;
+  }
+  @-webkit-keyframes skillTextFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes skillTextFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #whoIam {
+    width: 100%;
+    i {
+      color: var(--text-mood);
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+
+  #whatIveLearned {
+    width: 100%;
+
+    .article4 {
+      i {
+        color: var(--text-mood);
+        font-size: 20px;
+      }
+      p {
+        position: relative;
+        width: 80%;
+        text-align: justify;
+        font-size: 14px;
+        margin-bottom: 30px;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -25px;
+          left: 0;
+          background: linear-gradient(
+            to right,
+            transparent,
+            var(--text-lightest-grey),
+            transparent
+          );
+        }
+
+        &:last-of-type:after {
+          background: none;
+        }
+
+        span {
+          font-weight: 600;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  #quote {
+    width: 100%;
+  }
+}

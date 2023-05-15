@@ -1,0 +1,132 @@
+:root {
+  --bg-gradient-dark: hsl(179, 34%, 48%);
+  --bg-gradient-light: hsl(113, 48%, 61%);
+
+  --bg-gradient: linear-gradient(
+    135deg,
+    var(--bg-gradient-dark) 0%,
+    var(--bg-gradient-light) 100%
+  );
+
+  --text-black: #323232;
+  --text-dark-grey: #54595f;
+  --text-lighter-grey: #646464;
+  --text-light-grey: #75777c;
+  --text-quote-grey: #abafb7;
+  --text-lightest-grey: hsl(223, 27%, 90%);
+  --text-void: #eeeeee;
+  --text-white: rgb(255, 255, 255);
+
+  --bubbles-opacity: 0.25;
+  --card-copy-opacity: 0.3;
+  --dark-theme-border: hsla(0, 0%, 39%, 0.341);
+}
+
+.dark {
+  --bg-gradient-dark: hsl(0, 0%, 10%);
+  --bg-gradient-light: hsl(0, 0%, 14%);
+
+  --bg-gradient: linear-gradient(
+    135deg,
+    var(--bg-gradient-dark) 0%,
+    var(--bg-gradient-light) 100%
+  );
+
+  --text-black: #dddddd;
+  --text-dark-grey: #eeeeee;
+  --text-lighter-grey: #dee2ec;
+  --text-light-grey: #abafb7;
+  --text-quote-grey: #75777c;
+  --text-lightest-grey: hsl(0, 0%, 39%);
+  --text-void: #54595f;
+  --text-white: #191919;
+
+  --text-void: #292b2e;
+
+  .navbarTop li,
+  .navbarBottom {
+    border: 2px solid var(--dark-theme-border);
+  }
+  .card {
+    border: 2px solid var(--dark-theme-border);
+  }
+  .description {
+    padding: 0 1px;
+    box-sizing: border-box;
+  }
+
+  .descriptionSegment {
+    box-sizing: border-box;
+    border: 2px solid var(--dark-theme-border);
+    border-left: none;
+  }
+
+  .arrowToTop {
+    --text-white: var(--text-mood);
+  }
+  @media only screen and (max-width: 1160px) {
+    .navigationPanel {
+      box-sizing: border-box;
+    }
+    .card {
+      box-sizing: border-box;
+    }
+    .description {
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .descriptionSegment {
+      box-sizing: border-box;
+      border-left: 2px solid var(--dark-theme-border);
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .navbarTop {
+      border: none;
+      li {
+        border: none;
+      }
+    }
+    .navbarBottom {
+      position: relative;
+      border-top: none;
+      border-bottom: none;
+
+      .aboutButton:after {
+        position: absolute;
+        content: "";
+        background: transparent;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(
+          to left,
+          transparent,
+          var(--text-lightest-grey),
+          transparent
+        );
+      }
+    }
+  }
+
+  @media only screen and (min-width: 701px) {
+    .navbarTop li {
+      box-shadow: 0 0 20px var(--dark-theme-border);
+    }
+  }
+}
+
+.darkBubbles {
+  --text-white: var(--text-mood);
+  --bubbles-opacity: 0.15;
+}
+
+.darkCardCopy {
+  --card-copy-opacity: 0.15;
+}

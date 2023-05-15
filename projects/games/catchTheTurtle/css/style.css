@@ -1,0 +1,65 @@
+html{box-sizing: border-box;}
+*, *:before, *:after{box-sizing: inherit;}
+
+body{
+    
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+
+	.playground{
+	
+	border: 5px solid rgb(200, 200, 200);
+	position: relative;
+	width: 600px;
+    height:600px;
+    margin: 0 auto;
+	background-image: url("../img/grass.jpg")
+	}
+
+
+body p {
+	color: white;
+	display: block;
+	position: relative;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+	width: 600px;
+	
+	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.group:before,
+.group:after {
+	  content: " ";
+	  display: table;
+}
+
+.group:after {
+	  clear: both;
+}
+
+.square img{
+
+	display: block;
+    position: absolute;
+	width: 125px;
+	height: 125px;
+    border: 1px solid gray;
+    border-radius: 50%;
+	
+}
+
+
+

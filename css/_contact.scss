@@ -1,0 +1,248 @@
+//get in touch
+#getInTouch .main {
+  display: flex;
+  flex-direction: column;
+  article {
+    padding: 30px;
+  }
+  .article2 {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+    p {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      line-height: 1;
+      margin-top: 6px;
+      margin-bottom: 30px;
+      a,
+      a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      span:first-child {
+        background-color: var(--text-mood);
+        color: var(--text-white);
+        padding: 0;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      span:last-child {
+        margin-top: 4px;
+      }
+    }
+    p:nth-of-type(1)::after,
+    p:nth-of-type(2)::after,
+    p:nth-of-type(3)::after,
+    p:nth-of-type(4)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -18px;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(
+        to left,
+        transparent,
+        var(--text-lightest-grey),
+        transparent
+      );
+    }
+  }
+}
+
+//-----------------------------------------------
+//contact form
+
+/* Style the form container */
+.formContainer {
+  padding: 30px;
+  background-color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+
+  form {
+    width: 100%;
+  }
+}
+
+/* Style the form inputs */
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer textarea {
+  padding: 15px;
+  border: 2px solid var(--text-void);
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: var(--text-white);
+  outline: none;
+  color: var(--text-light-grey);
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background-color: var(--text-white);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--text-quote-grey);
+}
+
+/* Style the submit button */
+.formContainer button[type="submit"] {
+  background-color: var(--text-mood);
+  color: var(--text-white);
+  border: none;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-start;
+
+  i {
+    transition: 0.25s ease-out;
+    margin-left: 6px;
+  }
+  &:hover {
+    i {
+      transform: translateX(6px);
+    }
+  }
+}
+
+/* Style the error messages */
+.formContainer .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style the form row container */
+.form-row {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  input {
+    width: 50%;
+  }
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-ms-input-placeholder,
+input::-ms-input-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea:focus,
+textarea:active,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:active,
+input[type="email"]:active {
+  color: var(--text-mood);
+  border: 2px solid var(--text-mood);
+}
+
+textarea:focus::-webkit-input-placeholder,
+textarea:active::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder,
+input:active ::-webkit-input-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus:-ms-input-placeholder,
+textarea:active:-ms-input-placeholder,
+input:focus:-ms-input-placeholder,
+input:active :-ms-input-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-ms-input-placeholder,
+textarea:active::-ms-input-placeholder,
+input:focus::-ms-input-placeholder,
+input:active ::-ms-input-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::placeholder,
+textarea:active::placeholder,
+input:focus::placeholder,
+input:active ::placeholder {
+  color: var(--text-dark-grey);
+}
+
+//-----------------------------------------------
+
+//MEDIA QUERIES
+@media only screen and (max-width: 1160px) {
+}
+
+@media only screen and (max-width: 700px) {
+  #getInTouch .main {
+    .article2 {
+      display: flex;
+      flex-direction: column;
+      p:nth-of-type(4)::after {
+        background: none;
+      }
+    }
+  }
+}

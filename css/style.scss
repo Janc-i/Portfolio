@@ -1,0 +1,148 @@
+@import "./globals";
+
+body {
+  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.bodyContainer {
+  position: relative;
+  background-color: black;
+
+  .arrowToTop {
+    position: fixed;
+    display: none;
+    color: var(--text-white);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-animation: arrowTopStart 0.25s ease-out forwards;
+    animation: arrowTopStart 0.25s ease-out forwards;
+
+    @-webkit-keyframes arrowTopStart {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes arrowTopStart {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+    &:hover {
+      transform: scale(1.1) !important;
+      opacity: 0.5;
+      i {
+        -webkit-animation: arrowTopFocus 0.5s ease-out infinite;
+        animation: arrowTopFocus 0.5s ease-out infinite;
+        @-webkit-keyframes arrowTopFocus {
+          0% {
+            transform: translateY(4px);
+          }
+          100% {
+            transform: translateY(-4px);
+          }
+        }
+        @keyframes arrowTopFocus {
+          0% {
+            transform: translateY(4px);
+          }
+          100% {
+            transform: translateY(-4px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.background {
+  background-image: var(--bg-gradient);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.bodyContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  height: 90vh;
+  max-height: 635px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3%;
+  z-index: 1;
+}
+
+.mainPanel {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//----------------------------------------------------------
+
+body::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background-color: var(--bg-gradient-dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+.easterEgg {
+  line-height: 1 !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 30px;
+  width: 100%;
+  font-size: 6px;
+  color: var(--text-white) !important;
+}
+
+@import "./navigationPanel";
+@import "./card";
+@import "./description";
+@import "./animations";
+@import "./about";
+@import "./resume";
+@import "./projects";
+@import "./personal";
+@import "./contact";
+@import "./mediaQueries";

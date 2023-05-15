@@ -1,0 +1,118 @@
+.description {
+  height: 94%;
+  max-height: 604px;
+  overflow: hidden;
+  max-width: 708px;
+  width: auto;
+  transition: 0.25s;
+
+  p {
+    color: var(--text-light-grey);
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-dark-grey);
+    font-weight: 600;
+  }
+}
+.description > div {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow-y: auto;
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.descriptionSegment {
+  header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: linear-gradient(
+        to left,
+        transparent,
+        var(--text-lightest-grey)
+      );
+    }
+    p {
+      color: var(--text-black);
+      position: relative;
+      padding-left: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 17px;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(
+          70deg,
+          var(--text-mood) 0%,
+          transparent 100%
+        );
+        border-radius: 50%;
+        opacity: 0.15;
+      }
+      span {
+        color: var(--text-mood);
+      }
+    }
+  }
+}
+
+.description .resume {
+  background-color: var(--text-white);
+}
+
+.description .projects {
+  background-color: var(--text-white);
+}
+
+.description .personal {
+  background-color: var(--text-white);
+}
+
+.description .contact {
+  background-color: var(--text-white);
+}
+
+.hideContent {
+  display: none;
+}
+
+.description > div::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background-color: var(--text-white);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.description > div::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}

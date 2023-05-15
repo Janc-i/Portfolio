@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors, lizard, Spock</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttonsP1">
+        <div id="btnP1rock" class="btnP1" value="ROCK">
+          <img src="./img/Lrock.png" alt="ROCK" />
+        </div>
+        <div id="btnP1paper" class="btnP1" value="PAPER">
+          <img src="./img/Lpaper.png" alt="PAPER" />
+        </div>
+        <div id="btnP1scissors" class="btnP1" value="SCISSORS">
+          <img src="./img/Lscissors.png" alt="SCISSORS" />
+        </div>
+        <div id="btnP1lizard" class="btnP1" value="LIZARD">
+          <img src="./img/Llizard.png" alt="LIZARD" />
+        </div>
+        <div id="btnP1spock" class="btnP1" value="SPOCK">
+          <img src="./img/Lspock.png" alt="SPOCK" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="score-container">
+          <div id="scoreP1">0</div>
+          <div id="scoreP2">0</div>
+        </div>
+        <div class="battleground">
+          <div class="battlegroundP1">
+            <div class="infoP1"><img src="img/raj.jpg" alt="" /></div>
+            <div class="actionP1">
+              <div id="defaultP1btn" class="btnP1" value="ROCK">
+                <img src="./img/Lrock.png" alt="ROCK" />
+              </div>
+            </div>
+          </div>
+          <div class="battlegroundP2">
+            <div class="actionP2">
+              <div id="defaultP2btn" class="btnP2" value="ROCK">
+                <img src="./img/Rrock.png" alt="ROCK" />
+              </div>
+            </div>
+            <div class="infoP2"><img src="img/sheldon.jpg" alt="" /></div>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <div class="buttonsP2">
+        <div id="btnP2rock" class="btnP2" value="ROCK">
+          <img src="./img/Rrock.png" alt="ROCK" />
+        </div>
+        <div id="btnP2paper" class="btnP2" value="PAPER">
+          <img src="./img/Rpaper.png" alt="PAPER" />
+        </div>
+        <div id="btnP2scissors" class="btnP2" value="SCISSORS">
+          <img src="./img/Rscissors.png" alt="SCISSORS" />
+        </div>
+        <div id="btnP2lizard" class="btnP2" value="LIZARD">
+          <img src="./img/Rlizard.png" alt="LIZARD" />
+        </div>
+        <div id="btnP2spock" class="btnP2" value="SPOCK">
+          <img src="./img/Rspock.png" alt="SPOCK" />
+        </div>
+      </div>
+    </div>
+
+    <div class="raj-gif-happy">
+      <div
+        class="tenor-gif-embed"
+        data-postid="6168236"
+        data-share-method="host"
+        data-aspect-ratio="1.11927"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/rajesh-bbt-tbbt-big-bang-theory-kiss-gif-6168236"
+          >Rajesh Bbt GIF</a
+        >from <a href="https://tenor.com/search/rajesh-gifs">Rajesh GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="3558551"
+        data-share-method="host"
+        data-aspect-ratio="2.22222"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/thumbsup-happy-big-bang-theory-raj-gif-3558551"
+          >Happy GIF</a
+        >from <a href="https://tenor.com/search/thumbsup-gifs">Thumbsup GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="15851256"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/tbbt-belt-the-big-bang-theory-gif-15851256"
+          >Tbbt Belt GIF</a
+        >from <a href="https://tenor.com/search/tbbt-gifs">Tbbt GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="26085382"
+        data-share-method="host"
+        data-aspect-ratio="1.33333"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/clapping-hands-yay-excited-applause-yes-gif-26085382"
+          >Clapping Hands Yay GIF</a
+        >from
+        <a href="https://tenor.com/search/clapping+hands-gifs"
+          >Clapping Hands GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="4548337"
+        data-share-method="host"
+        data-aspect-ratio="1.77"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/ready-big-bang-theory-lets-bounce-lets-bounce-bitches-kunal-nayyar-gif-4548337"
+          >Let&#39;S Bounce, Bitches! GIF</a
+        >from <a href="https://tenor.com/search/ready-gifs">Ready GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="10888315"
+        data-share-method="host"
+        data-aspect-ratio="1.78571"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/creep-cooking-bigbang-raj-the-big-bang-theory-gif-10888315"
+          >Creep Cooking GIF</a
+        >from <a href="https://tenor.com/search/creep-gifs">Creep GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="20779163"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/later-looser-bigbang-theory-raj-gif-20779163"
+          >Later Looser GIF</a
+        >from <a href="https://tenor.com/search/later-gifs">Later GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="12505143"
+        data-share-method="host"
+        data-aspect-ratio="1.79775"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-raj-smile-smiling-gif-12505143"
+          >теория большого взрыва улыбка улыбаться улыбается GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="12505143"
+        data-share-method="host"
+        data-aspect-ratio="1.79775"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-raj-smile-smiling-gif-12505143"
+          >теория большого взрыва улыбка улыбаться улыбается GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="8853286"
+        data-share-method="host"
+        data-aspect-ratio="1.98413"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/raj-dogs-big-bang-theory-gif-8853286"
+          >Raj Dogs GIF</a
+        >from <a href="https://tenor.com/search/raj-gifs">Raj GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="12125142"
+        data-share-method="host"
+        data-aspect-ratio="1.92308"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/raj-koothrappali-rock-on-the-big-bang-theory-gif-12125142"
+          >Raj Koothrappali Rock On GIF</a
+        >from
+        <a href="https://tenor.com/search/raj+koothrappali-gifs"
+          >Raj Koothrappali GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="16442250"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/guitar-hero-sheldon-music-bbt-big-bang-theory-gif-16442250"
+          >Guitar Hero Sheldon GIF</a
+        >from
+        <a href="https://tenor.com/search/guitar+hero-gifs">Guitar Hero GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+    </div>
+
+    <div class="sheldon-gif-sad">
+      <div
+        class="tenor-gif-embed"
+        data-postid="22883551"
+        data-share-method="host"
+        data-aspect-ratio="1.25"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-no-shaking-my-gif-22883551"
+          >Sheldon Cooper GIF</a
+        >from <a href="https://tenor.com/search/sheldon-gifs">Sheldon GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="24874527"
+        data-share-method="host"
+        data-aspect-ratio="0.940625"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/sheldoncooper-sheldon-gif-24874527"
+          >Sheldoncooper Sheldon GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldoncooper-gifs"
+          >Sheldoncooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="6168143"
+        data-share-method="host"
+        data-aspect-ratio="0.717647"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-bbt-tbbt-big-bang-theory-jim-parsons-gif-6168143"
+          >Sheldon Cooper Bbt GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="13406008"
+        data-share-method="host"
+        data-aspect-ratio="1.52866"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/horror-sheldon-gif-13406008"
+          >Horror Sheldon GIF</a
+        >from <a href="https://tenor.com/search/horror-gifs">Horror GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="17410154"
+        data-share-method="host"
+        data-aspect-ratio="1.33333"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/spray-sheldon-cooper-tbbt-the-big-bang-theory-sanitize-gif-17410154"
+          >Spray Sheldon Cooper GIF</a
+        >from <a href="https://tenor.com/search/spray-gifs">Spray GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="3484118"
+        data-share-method="host"
+        data-aspect-ratio="1.91571"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/big-bang-theory-sheldon-cooper-gif-3484118"
+          >Nah Nah! GIF</a
+        >from <a href="https://tenor.com/search/big-gifs">Big GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="14678558"
+        data-share-method="host"
+        data-aspect-ratio="1.82857"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-sheldon-cooper-im-dying-gif-14678558"
+          >The Big Bang Theory Sheldon Cooper GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="5676656"
+        data-share-method="host"
+        data-aspect-ratio="1.82482"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/big-bang-theory-softkitty-gif-5676656"
+          >Big Bang GIF</a
+        >from <a href="https://tenor.com/search/big-gifs">Big GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="16911551"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/stressed-sheldon-cooper-big-bang-theory-paper-bag-tbbt-gif-16911551"
+          >Stressed Sheldon Cooper GIF</a
+        >from <a href="https://tenor.com/search/stressed-gifs">Stressed GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="14859838"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/tv-shows-sheldon-cooper-the-big-bang-theory-annoyed-irritated-gif-14859838"
+          >Tv Shows Sheldon Cooper GIF</a
+        >from <a href="https://tenor.com/search/tv+shows-gifs">Tv Shows GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="3740325"
+        data-share-method="host"
+        data-aspect-ratio="1.9305"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/big-bang-theory-gif-3740325"
+          >Big Bang Theory GIF</a
+        >from
+        <a href="https://tenor.com/search/big+bang+theory-gifs"
+          >Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="7974622"
+        data-share-method="host"
+        data-aspect-ratio="1"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/the-big-bang-theory-sheldon-gif-7974622"
+          >The Big Bang Theory Sheldon GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="5210741"
+        data-share-method="host"
+        data-aspect-ratio="1.785"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/angry-big-bang-theory-tbbt-sheldon-gif-5210741"
+          >Angry Big Bang Theory GIF</a
+        >from <a href="https://tenor.com/search/angry-gifs">Angry GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="16281669"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/brain-explode-fi-fidonia-sheldon-angry-gif-16281669"
+          >Brain Explode Fi Fidonia GIF</a
+        >from
+        <a href="https://tenor.com/search/brain+explode-gifs"
+          >Brain Explode GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="17550831"
+        data-share-method="host"
+        data-aspect-ratio="1.51659"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-big-bang-theory-sheldon-cooper-jim-parsons-amy-farrah-fowler-gif-17550831"
+          >The Big Bang Theory Sheldon Cooper GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="9365527"
+        data-share-method="host"
+        data-aspect-ratio="1.78571"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/jim-parsons-signal-tbbt-sheldon-stare-gif-9365527"
+          >Jim Parsons Signal GIF</a
+        >from
+        <a href="https://tenor.com/search/jim+parsons-gifs">Jim Parsons GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+    </div>
+
+    <div class="raj-gif-sad">
+      <div
+        class="tenor-gif-embed"
+        data-postid="22469153"
+        data-share-method="host"
+        data-aspect-ratio="1.33333"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/shocked-open-mouth-koothrappali-rajesh-huh-gif-22469153"
+          >Shocked Open Mouth GIF</a
+        >from <a href="https://tenor.com/search/shocked-gifs">Shocked GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="15951104"
+        data-share-method="host"
+        data-aspect-ratio="1.78771"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-what-is-wrong-with-you-i-hate-you-doubt-hate-gif-15951104"
+          >The Big Bang Theory What Is Wrong With You GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="15361976"
+        data-share-method="host"
+        data-aspect-ratio="1.78771"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/this-is-tough-raj-big-bang-theory-gif-15361976"
+          >This Is Tough Raj GIF</a
+        >from
+        <a href="https://tenor.com/search/this+is+tough-gifs"
+          >This Is Tough GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="12666948"
+        data-share-method="host"
+        data-aspect-ratio="0.639535"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/aquaman-big-bang-theory-funny-gif-12666948"
+          >Aquaman Big Bang Theory GIF</a
+        >from <a href="https://tenor.com/search/aquaman-gifs">Aquaman GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="12413160"
+        data-share-method="host"
+        data-aspect-ratio="1.76796"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/big-bang-theory-blabbed-opps-gif-12413160"
+          >теория большого взрыва проболтался GIF</a
+        >from
+        <a href="https://tenor.com/search/big+bang+theory-gifs"
+          >Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="16487849"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/raj-missy-crying-puppy-cry-big-bang-gif-16487849"
+          >Raj Missy GIF</a
+        >from <a href="https://tenor.com/search/raj-gifs">Raj GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="17949908"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-big-bang-theory-raj-koothrappali-kunal-nayyar-laptop-gif-17949908"
+          >The Big Bang Theory Raj Koothrappali GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="25654816"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/indian-man-raj-koothrapali-the-big-bang-theory-no-gif-25654816"
+          >Indian Man GIF</a
+        >from <a href="https://tenor.com/search/indian-gifs">Indian GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="17949932"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-big-bang-theory-raj-koothrappali-kunal-nayyar-sandwich-gif-17949932"
+          >The Big Bang Theory Raj Koothrappali GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+    </div>
+
+    <div class="sheldon-gif-happy">
+      <div
+        class="tenor-gif-embed"
+        data-postid="6165657"
+        data-share-method="host"
+        data-aspect-ratio="1.86567"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-laugh-sarcastic-tbbt-gaming-gif-6165657"
+          >Sheldon Cooper Laugh GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="15875568"
+        data-share-method="host"
+        data-aspect-ratio="2.06452"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-big-bang-theory-excited-ay-ay-ay-smile-gif-15875568"
+          >Sheldon Cooper Big Bang Theory GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="13154531"
+        data-share-method="host"
+        data-aspect-ratio="1.865"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/sheldon-cooper-smiling-gif-13154531"
+          >Sheldon Cooper Smiling GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="18827465"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/yes-gif-18827465">Yes GIF</a>from
+        <a href="https://tenor.com/search/yes-gifs">Yes GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="14676119"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/the-big-bang-theory-sheldon-cooper-cats-gif-14676119"
+          >The Big Bang Theory Sheldon Cooper GIF</a
+        >from
+        <a href="https://tenor.com/search/the+big+bang+theory-gifs"
+          >The Big Bang Theory GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="7561688"
+        data-share-method="host"
+        data-aspect-ratio="2.00893"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-beard-smile-big-bang-theory-gif-7561688"
+          >Sheldon Beard GIF</a
+        >from <a href="https://tenor.com/search/sheldon-gifs">Sheldon GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="3392443"
+        data-share-method="host"
+        data-aspect-ratio="2.14592"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/tv-comedy-cbs-big-bang-theory-sheldon-gif-3392443"
+          >Live Long And Prosper GIF</a
+        >from <a href="https://tenor.com/search/tv-gifs">Tv GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="14253339"
+        data-share-method="host"
+        data-aspect-ratio="1.01523"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-excited-to-see-you-big-bang-theory-happy-funny-face-gif-14253339"
+          >Sheldon Cooper Excited To See You GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="9909910"
+        data-share-method="host"
+        data-aspect-ratio="1.78571"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/bbt-big-bang-theory-sheldon-gif-9909910"
+          >Bbt Big Bang Theory GIF</a
+        >from <a href="https://tenor.com/search/bbt-gifs">Bbt GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="25476877"
+        data-share-method="host"
+        data-aspect-ratio="1.77778"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/happy-birthday-wishes-captain-planet-gif-25476877"
+          >Happy Birthday GIF</a
+        >from <a href="https://tenor.com/search/happy-gifs">Happy GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="21370935"
+        data-share-method="host"
+        data-aspect-ratio="1.78771"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/sheldon-cooper-big-bang-theory-sheldon-mocking-gotcha-gif-21370935"
+          >Sheldon Cooper Big Bang Theory GIF</a
+        >from
+        <a href="https://tenor.com/search/sheldon+cooper-gifs"
+          >Sheldon Cooper GIFs</a
+        >
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <div
+        class="tenor-gif-embed"
+        data-postid="7797185"
+        data-share-method="host"
+        data-aspect-ratio="1.71429"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/thanks-brain-sheldon-cooper-the-big-bang-theory-gif-7797185"
+          >Thanks Brain GIF</a
+        >from <a href="https://tenor.com/search/thanks-gifs">Thanks GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

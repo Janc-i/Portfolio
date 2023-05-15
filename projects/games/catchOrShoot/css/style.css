@@ -1,0 +1,154 @@
+body{
+    background: #000; 
+    position: relative;  
+ 
+}
+
+
+#game{
+    width: 600px;
+    height: 600px;
+    border: 30px solid rgb(38, 38, 38);
+    position: relative;
+    border-radius: 10px;
+   
+}
+
+#game:hover{
+    cursor:none;
+}
+
+h1{
+    color: rgb(94, 94, 94);
+    font-family: arial;
+    text-align: center;
+    width: 600px;
+    font-size: 12px;
+    position: absolute;
+    top: -35px;
+    left: -258px;
+
+}
+#player{
+    position: relative;
+    background-color: rgba(255, 0, 0);
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 575px;
+    left: 250px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-family: arial;
+    
+    
+}
+
+.obstacles{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    color:white;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: arial;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+#score{
+    border-radius: 10px;
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background-color: rgb(135, 135, 135);
+    top: -28px;
+    left: 170px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+}
+#score2{
+    border-radius: 10px;
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background-color: rgb(135, 135, 135);
+    top: -28px;
+    left: 350px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+}
+#counter{
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    top: -28px;
+    left: 286px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    
+}
+
+
+
+.bullet{
+    height: 20px;
+    width: 10px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+}
+
+.replay{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 274px;
+    left: 274px;
+    width: 100px;
+    color: white;
+    text-align: center;
+}
+
+.replayButton{
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.replayButton:hover{
+    cursor:pointer;
+    color: black;
+    background-color: #fff;
+
+}
+
+.replayScore{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.hide{
+    display: none;
+}

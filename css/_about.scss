@@ -1,0 +1,423 @@
+.about {
+  background-color: var(--text-white);
+  position: relative;
+}
+
+#aboutMe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutMe .main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 30px;
+
+  .article1 {
+    box-sizing: border-box;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 30px;
+    line-height: 1.7;
+    span {
+      font-weight: 600;
+      color: var(--text-lighter-grey);
+    }
+    p {
+      margin-top: 0;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+  }
+
+  .article2 {
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    padding: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        var(--text-lightest-grey),
+        transparent
+      );
+    }
+
+    p {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      line-height: 1;
+      margin-top: 6px;
+      margin-bottom: 30px;
+
+      span:first-child {
+        background-color: var(--text-mood);
+        color: var(--text-white);
+        padding: 0;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      span:last-child {
+        margin-top: 4px;
+      }
+    }
+    p:nth-of-type(1)::after,
+    p:nth-of-type(2)::after,
+    p:nth-of-type(3)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(
+        to left,
+        transparent,
+        var(--text-lightest-grey),
+        transparent
+      );
+    }
+  }
+}
+//---------------------------------------------
+// my services
+.about #myServices {
+  .main {
+    display: flex;
+
+    article {
+      padding: 30px;
+      line-height: 1.7;
+      width: 50%;
+
+      i {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-white);
+        font-size: 30px;
+        margin: 0 auto;
+        background: var(--text-mood);
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+
+        img {
+          position: absolute;
+          right: 9px;
+          top: 14px;
+          width: 35px;
+          height: 35px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 4px;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 16px;
+      }
+    }
+    .article2 {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          var(--text-lightest-grey),
+          transparent
+        );
+      }
+    }
+  }
+}
+//---------------------------------------------
+// my experience
+#myExperience .main {
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: justify;
+    i {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text-white);
+      font-size: 30px;
+      margin: 0 auto;
+      background: var(--text-mood);
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+    p {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.projectsLink {
+  color: var(--text-mood);
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+//---------------------------------------------
+// pricing
+
+.about #pricing {
+  .main {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+  article {
+    position: relative;
+    padding: 30px;
+    width: 33%;
+
+    i {
+      color: var(--text-mood);
+      font-size: 30px;
+    }
+
+    h4 span:nth-of-type(1) {
+      font-weight: 400;
+      color: var(--text-light-grey);
+      vertical-align: 80%;
+    }
+    h4 span:nth-of-type(2) {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    h4 span:nth-of-type(3) {
+      font-weight: 400;
+      color: var(--text-light-grey);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(
+        to top,
+        transparent,
+        var(--text-lightest-grey),
+        transparent
+      );
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(
+        to top,
+        transparent,
+        var(--text-lightest-grey),
+        transparent
+      );
+    }
+  }
+}
+
+//---------------------------------------------
+// fun facts
+
+#funFacts .main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+
+  article {
+    box-sizing: border-box;
+    width: 25%;
+    position: relative;
+    padding: 30px;
+    i {
+      color: var(--text-mood);
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.7;
+      font-size: 13px;
+    }
+  }
+
+  .article2::before,
+  .article3::before,
+  .article4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      var(--text-lightest-grey),
+      transparent
+    );
+  }
+}
+.article5 {
+  padding: 0 30px;
+  p {
+    i {
+      color: var(--text-mood);
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    text-align: justify;
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+      color: inherit;
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}
+
+//---------------------------------------------
+// visitors
+
+#visitors .main {
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    padding-bottom: 0;
+    i {
+      color: var(--text-mood);
+      font-size: 20px;
+      font-weight: 900;
+    }
+    p.visitors {
+      font-weight: 600;
+      width: 140px;
+      font-size: 50px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+//---------------------------------------------
+// quotes
+#quote .main {
+  article {
+    font-style: italic;
+    color: var(--text-quote-grey);
+    padding: 30px;
+
+    p {
+      position: relative;
+      color: var(--text-quote-grey);
+      font-size: 14px;
+      margin: 0;
+      padding: 0 30px;
+
+      i.fa-quote-left {
+        font-size: 16px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+      }
+      i.fa-quote-right {
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+      }
+
+      &:last-child {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+//----------------------------------------------
+//MEDIA QUERIES
+
+@media only screen and (max-width: 1160px) {
+}
+
+@media only screen and (max-width: 700px) {
+  #aboutMe .main {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    .article1,
+    .article2 {
+      width: 100%;
+    }
+  }
+
+  #myServices .main {
+    flex-direction: column;
+  }
+
+  #pricing .main {
+    article {
+      width: 100% !important;
+    }
+  }
+  #funFacts .main {
+    flex-wrap: wrap;
+    article {
+      box-sizing: border-box;
+      flex-basis: 50%;
+    }
+  }
+}

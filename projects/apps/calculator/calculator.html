@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 300px;
+        padding: 2px;
+        box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.8);
+        border-radius: 10px;
+      }
+
+      .display {
+        height: 70px;
+        width: 300px;
+        border-bottom: 2px solid rgb(154, 154, 154);
+        font-size: 28px;
+
+        text-align: right;
+        font-family: arial;
+        line-height: 2.6;
+      }
+
+      .numbers-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 300px;
+        column-gap: 2px;
+        row-gap: 1px;
+      }
+
+      .numbers-container button {
+        height: 50px;
+        border: 1px solid grey;
+        line-height: 2.8;
+      }
+
+      .buttonNumber {
+        background-color: rgb(251, 251, 251);
+      }
+
+      .numbers-container button:active {
+        background-color: #fff;
+      }
+
+      #backspace-container {
+        width: 300px;
+        display: flex;
+        justify-content: end;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        background-color: rgb(225, 225, 225);
+      }
+
+      button {
+        cursor: pointer;
+
+        font-size: 18px;
+      }
+
+      button:hover {
+        background-color: rgb(220, 220, 220);
+        transition: 0.15s;
+      }
+
+      #rovnasa {
+        background-color: rgba(88, 255, 255, 0.5);
+      }
+
+      #rovnasa:hover {
+        background-color: rgba(1, 255, 255, 0.7);
+      }
+
+      #rovnasa:active {
+        background-color: rgb(211, 255, 255);
+      }
+
+      #backspace {
+        border: 1px solid grey;
+      }
+
+      #backspace:active {
+        background-color: #fff;
+      }
+
+      #plus {
+        border-bottom-right-radius: 10px;
+      }
+      #number0 {
+        border-bottom-left-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="displayID" class="display"></div>
+      <div id="backspace-container">
+        <button class="buttonSpecial" id="backspace">&larr;</button>
+      </div>
+
+      <div class="numbers-container">
+        <button id="lavaZatvorka" class="buttonNumber">(</button>
+        <button id="pravaZatvorka" class="buttonNumber">)</button>
+        <button id="percento" class="buttonSpecial">%</button>
+        <button id="numberAc" class="buttonSpecial">AC</button>
+        <button id="number7" class="buttonNumber">7</button>
+        <button id="number8" class="buttonNumber">8</button>
+        <button id="number9" class="buttonNumber">9</button>
+        <button id="deleno" class="buttonNumber">/</button>
+        <button id="number4" class="buttonNumber">4</button>
+        <button id="number5" class="buttonNumber">5</button>
+        <button id="number6" class="buttonNumber">6</button>
+        <button id="krat" class="buttonNumber">x</button>
+        <button id="number1" class="buttonNumber">1</button>
+        <button id="number2" class="buttonNumber">2</button>
+        <button id="number3" class="buttonNumber">3</button>
+        <button id="minus" class="buttonNumber">-</button>
+        <button id="number0" class="buttonNumber">0</button>
+        <button id="ciarka" class="buttonNumber">,</button>
+        <button id="rovnasa" class="buttonSpecial">=</button>
+        <button id="plus" class="buttonNumber">+</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

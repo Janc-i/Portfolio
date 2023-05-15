@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">UNIT CONVERTER</div>
+      <div class="tablecontainer">
+        <div class="leftside">
+<!-- TYPE -->
+          <div class="type">
+            <div class="typerow">
+              <label for="lengths">lengths</label>
+              <input type="radio" name="type" id="lengths" value="lengths"></input>
+            </div>
+
+            <div class="typerow">
+              <label for="weights">weights</label>
+              <input type="radio" name="type" id="weights" value="weights"></input>
+            </div>
+
+            <div class="typerow">
+              <label for="time">time</label>
+              <input type="radio" name="type" id="time" value="time"></input>
+            </div>
+            <div class="typerow">
+              <label for="temp">temp</label>
+              <input type="radio" name="type" id="temp" value="temp"></input>
+            </div>
+          </div>
+            
+
+
+
+          <div class="units hide">
+            <!-- UNITS LENGTHS -->
+
+            <div class="unitsrow lengths hide">
+              <label for="meter">meter</label>
+              <input type="radio" name="units" id="meter" value="m"></input>
+          </div>
+            <div class="unitsrow lengths hide">
+              <label for="kilometer">kilometer</label>
+              <input type="radio" name="units" id="kilometer" value="km"></input>
+          </div>
+            <div class="unitsrow lengths hide">
+              <label for="foot">foot</label>
+              <input type="radio" name="units" id="foot" value="feet"></input>
+          </div>
+            <div class="unitsrow lengths hide">
+              <label for="mile">mile</label>
+              <input type="radio" name="units" id="mile" value="miles"></input>
+          </div>
+            <div class="unitsrow lengths hide">
+              <label for="yard">yard</label>
+              <input type="radio" name="units" id="yard" value="yards"></input>
+          </div>
+            <div class="unitsrow lengths hide">
+              <label for="inch">inch</label>
+              <input type="radio" name="units" id="inch" value="inches"></input>
+          </div>
+
+
+          <!-- UNITS WEIGHTS -->
+
+          <div class="unitsrow weights hide">
+            <label for="gram">gram</label>
+            <input type="radio" name="units" id="gram" value="g"></input>
+        </div>
+          <div class="unitsrow weights hide">
+            <label for="kilogram">kilogram</label>
+            <input type="radio" name="units" id="kilogram" value="kg"></input>
+        </div>
+          <div class="unitsrow weights hide">
+            <label for="ton">ton</label>
+            <input type="radio" name="units" id="ton" value="tons"></input>
+        </div>
+          <div class="unitsrow weights hide">
+            <label for="pound">pound</label>
+            <input type="radio" name="units" id="pound" value="pounds"></input>
+        </div>
+          <div class="unitsrow weights hide">
+            <label for="ounce">ounce</label>
+            <input type="radio" name="units" id="ounce" value="ounces"></input>
+        </div>
+          <div class="unitsrow weights hide">
+            <label for="carat">carat</label>
+            <input type="radio" name="units" id="carat" value="carats"></input>
+        </div>
+
+
+        <!-- UNITS TIME -->
+
+        <div class="unitsrow time hide">
+          <label for="second">second</label>
+          <input type="radio" name="units" id="second" value="seconds"></input>
+      </div>
+        <div class="unitsrow time hide">
+          <label for="minute">minute</label>
+          <input type="radio" name="units" id="minute" value="minutes"></input>
+      </div>
+        <div class="unitsrow time hide">
+          <label for="hour">hour</label>
+          <input type="radio" name="units" id="hour" value="hours"></input>
+      </div>
+        <div class="unitsrow time hide">
+          <label for="day">day</label>
+          <input type="radio" name="units" id="day" value="days"></input>
+      </div>
+        <div class="unitsrow time hide">
+          <label for="month">month</label>
+          <input type="radio" name="units" id="month" value="months"></input>
+      </div>
+        <div class="unitsrow time hide">
+          <label for="year">year</label>
+          <input type="radio" name="units" id="year" value="years"></input>
+      </div>
+
+      <!-- UNITS TEMP -->
+      <div class="unitsrow temp hide">
+        <label for="celsius">celsius</label>
+        <input type="radio" name="units" id="celsius" value="°C"></input>
+    </div>
+      <div class="unitsrow temp hide">
+        <label for="fahrenheit">fahrenheit</label>
+        <input type="radio" name="units" id="fahrenheit" value="°F"></input>
+    </div>
+      <div class="unitsrow temp hide">
+        <label for="kelvin">kelvin</label>
+        <input type="radio" name="units" id="kelvin" value="K"></input>
+    </div>
+
+
+
+        
+        
+        
+        
+        </div>
+
+          <div class="tounits hide">
+                  <!-- UNITS LENGTHS -->
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-meter">meter</label>
+                    <input type="radio" name="to-units" id="to-meter" value="m"></input>
+                </div>
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-kilometer">kilometer</label>
+                    <input type="radio" name="to-units" id="to-kilometer" value="km"></input>
+                </div>
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-foot">foot</label>
+                    <input type="radio" name="to-units" id="to-foot" value="feet"></input>
+                </div>
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-mile">mile</label>
+                    <input type="radio" name="to-units" id="to-mile" value="miles"></input>
+                </div>
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-yard">yard</label>
+                    <input type="radio" name="to-units" id="to-yard" value="yards"></input>
+                </div>
+                  <div class="tounitsrow lengths hide">
+                    <label for="to-inch">inch</label>
+                    <input type="radio" name="to-units" id="to-inch" value="inches"></input>
+                </div>
+      
+      
+                <!-- UNITS WEIGHTS -->
+      
+                <div class="tounitsrow weights hide">
+                  <label for="to-gram">gram</label>
+                  <input type="radio" name="to-units" id="to-gram" value="g"></input>
+              </div>
+                <div class="tounitsrow weights hide">
+                  <label for="to-kilogram">kilogram</label>
+                  <input type="radio" name="to-units" id="to-kilogram" value="kg"></input>
+              </div>
+                <div class="tounitsrow weights hide">
+                  <label for="to-ton">ton</label>
+                  <input type="radio" name="to-units" id="to-ton" value="tons"></input>
+              </div>
+                <div class="tounitsrow weights hide">
+                  <label for="to-pound">pound</label>
+                  <input type="radio" name="to-units" id="to-pound" value="pounds"></input>
+              </div>
+                <div class="tounitsrow weights hide">
+                  <label for="to-ounce">ounce</label>
+                  <input type="radio" name="to-units" id="to-ounce" value="ounces"></input>
+              </div>
+                <div class="tounitsrow weights hide">
+                  <label for="to-carat">carat</label>
+                  <input type="radio" name="to-units" id="to-carat" value="carats"></input>
+              </div>
+      
+      
+              <!-- UNITS TIME -->
+      
+              <div class="tounitsrow time hide">
+                <label for="to-second">second</label>
+                <input type="radio" name="to-units" id="to-second" value="seconds"></input>
+            </div>
+              <div class="tounitsrow time hide">
+                <label for="to-minute">minute</label>
+                <input type="radio" name="to-units" id="to-minute" value="minutes"></input>
+            </div>
+              <div class="tounitsrow time hide">
+                <label for="to-hour">hour</label>
+                <input type="radio" name="to-units" id="to-hour" value="hours"></input>
+            </div>
+              <div class="tounitsrow time hide">
+                <label for="to-day">day</label>
+                <input type="radio" name="to-units" id="to-day" value="days"></input>
+            </div>
+              <div class="tounitsrow time hide">
+                <label for="to-month">month</label>
+                <input type="radio" name="to-units" id="to-month" value="months"></input>
+            </div>
+              <div class="tounitsrow time hide">
+                <label for="to-year">year</label>
+                <input type="radio" name="to-units" id="to-year" value="years"></input>
+            </div>
+
+             <!-- UNITS TEMP -->
+            <div class="tounitsrow temp hide">
+              <label for="to-celsius">celsius</label>
+              <input type="radio" name="to-units" id="to-celsius" value="°C"></input>
+          </div>
+            <div class="tounitsrow temp hide">
+              <label for="to-fahrenheit">fahrenheit</label>
+              <input type="radio" name="to-units" id="to-fahrenheit" value="°F"></input>
+          </div>
+            <div class="tounitsrow temp hide">
+              <label for="to-kelvin">kelvin</label>
+              <input type="radio" name="to-units" id="to-kelvin" value="K"></input>
+          </div>
+
+
+          </div>
+
+
+ 
+          
+        </div>
+          
+        <div class="rightside">
+          
+          <div class="rightTop">
+          <input oninput="evaluation();" id="input" placeholder = "enter value" type="text"> 
+          <span class="unitsshort" ></span>
+        </div>
+          
+          <div class="rightCenter">
+          <p class="equals">=</p>
+          <button class="swap" al="swap units"><img src="img/swap.jpg" alt=""></button>
+          </div>
+          
+          <div class="rightBottom">
+          <div class="result"></div>
+          <span class="tounitsshort"></span>
+          <img class="copyPaste" src="img/copypaste.png" alt="">
+        </div>
+        
+          <p class="text"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
