@@ -729,7 +729,7 @@ const particleCanvas = document.querySelector(".background");
 
 function createParticle(x, y) {
   const particle = document.createElement("div");
-  particle.classList.add("particle");
+  particle.classList.add("particleCursor");
   particle.style.left = `${x}px`;
   particle.style.top = `${y}px`;
   particle.style.setProperty("--tx", `${Math.random() * 400 - 200}px`);

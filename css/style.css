@@ -1131,7 +1131,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
-.particle {
+.particleCursor {
   position: absolute;
   width: 10px;
   height: 10px;
