@@ -317,12 +317,12 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>4838<br />Lines of HTML/CSS Code</p>
+                    <p>4884<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
                     <i class="fa-brands fa-square-js"></i>
-                    <p>747<br />Lines of Javascript Code</p>
+                    <p>757<br />Lines of Javascript Code</p>
                   </article>
                   <article class="article3">
                     <i class="fa-solid fa-clock"></i>
@@ -817,6 +817,7 @@ include('visits.php');
                     <li id="apps" class="hoverElement">Apps</li>
                     <li id="games" class="hoverElement">Games</li>
                     <li id="web" class="hoverElement">Web</li>
+                    <li id="QA" class="hoverElement">QA</li>
                   </ul>
                 </header>
                 <div class="main">
@@ -1094,6 +1095,27 @@ include('visits.php');
                         </div>
                         <h4>Premy</h4>
                         <p>Web Clone</p>
+                      </div></a
+                    >
+                    <a
+                      class="project QA firstCypressTest hoverElement"
+                      href="https://youtu.be/zlrxi5vxN4c"
+                      style="display: block"
+                      target="_blank"
+                    >
+                      <div class="projectWrapper">
+                        <div>
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/zlrxi5vxN4c"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                        <h4>Cypress.io</h4>
+                        <p>My first automated test using Cypress.io</p>
                       </div></a
                     >
                   </article>

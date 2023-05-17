@@ -677,9 +677,11 @@ let projects = document.querySelectorAll(".project");
 let games = document.querySelectorAll(".game");
 let apps = document.querySelectorAll(".app");
 let webs = document.querySelectorAll(".web");
+let QAs = document.querySelectorAll(".QA");
 let projectButtons = document
   .querySelector(".projectsMenu")
   .querySelectorAll("li");
+let QAbutton = document.getElementById("QA");
 let appsButton = document.getElementById("apps");
 let gamesButton = document.getElementById("games");
 let webButton = document.getElementById("web");
@@ -707,6 +709,14 @@ webButton.addEventListener("click", () => {
   });
   webs.forEach((web) => {
     web.classList.remove("hideProject");
+  });
+});
+QAbutton.addEventListener("click", () => {
+  projects.forEach((project) => {
+    project.classList.add("hideProject");
+  });
+  QAs.forEach((QA) => {
+    QA.classList.remove("hideProject");
   });
 });
 allButton.addEventListener("click", () => {

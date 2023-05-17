@@ -67,7 +67,8 @@
           aspect-ratio: 16 / 9;
           overflow: hidden;
 
-          img {
+          img,
+          iframe {
             width: 100%;
             transition: transform 0.8s ease;
           }
@@ -119,7 +120,8 @@
               opacity: 0.4;
             }
           }
-          img {
+          img,
+          iframe {
             transform: scale(1.05);
           }
           h4 {
