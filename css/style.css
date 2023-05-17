@@ -1403,21 +1403,24 @@ body::-webkit-scrollbar-thumb {
 .article5 {
   padding: 0 30px;
 }
-.article5 p {
+.article5 .note {
+  line-height: 1.7;
+  color: var(--text-light-grey);
+  font-size: 15px;
   text-align: justify;
 }
-.article5 p i {
+.article5 .note i {
   color: var(--text-mood);
   font-size: 20px;
   margin-right: 10px;
 }
-.article5 p a {
+.article5 .note a {
   text-decoration: underline;
   cursor: pointer;
-  color: inherit;
+  color: var(--text-light-grey);
 }
-.article5 p a:visited {
-  color: inherit;
+.article5 .note a:visited {
+  color: var(--text-light-grey);
 }
 .article5 .inspect {
   display: flex;

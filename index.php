@@ -30,7 +30,10 @@ include('visits.php');
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.jancii.com/" />
-    <meta property="og:image" content="https://www.jancii.com/img/portfolio.png" />
+    <meta
+      property="og:image"
+      content="https://www.jancii.com/img/portfolio.png"
+    />
     <meta property="og:image:alt" content="Janči" />
 
     <!-- google font -->
@@ -49,7 +52,7 @@ include('visits.php');
       referrerpolicy="no-referrer"
     />
 
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico" />
 
     <title>Janči</title>
 
@@ -332,7 +335,7 @@ include('visits.php');
                   </article>
                 </div>
                 <article class="article5">
-                  <p>
+                  <div class="note">
                     <i class="fa-solid fa-note-sticky"></i>
                     I found building this website to be the most complex and
                     challenging project I have worked on so far. I developed it
@@ -345,11 +348,16 @@ include('visits.php');
                       target="_blank"
                       >design</a
                     >.
-                    <p class="inspect"><i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="hoverElement" href="https://github.com/Janc-i/Portfolio" target="_blank">Inspect Source Code</a>
+                    <p class="inspect">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <a
+                        class="hoverElement"
+                        href="https://github.com/Janc-i/Portfolio"
+                        target="_blank"
+                        >Inspect Source Code</a
+                      >
                     </p>
-                    
-                  </p>
+                  </div>
                 </article>
               </section>
               <!-- visitors counter -->
@@ -493,9 +501,7 @@ include('visits.php');
                       <span class="period">2023</span>
                       <h5>Git/GitHub <span>Course</span></h5>
                       <span class="educationPlace">Skillmea</span>
-                      <p>
-                        Basic knowledge of Git, Commands, Branches, GitHub
-                      </p>
+                      <p>Basic knowledge of Git, Commands, Branches, GitHub</p>
                       <a
                         class="hoverElement"
                         href="./certificates/skillmea-certifikat-git-a-github-zaklady.pdf"
@@ -1768,7 +1774,10 @@ include('visits.php');
                 </header>
                 <div class="main">
                   <article class="article1 formContainer">
-                    <form method="POST" action="https://formsubmit.co/0288d5bacfb367672b38f2f7af698f5b">
+                    <form
+                      method="POST"
+                      action="https://formsubmit.co/0288d5bacfb367672b38f2f7af698f5b"
+                    >
                       <div class="form-row">
                         <input
                           type="text"
@@ -1795,12 +1804,15 @@ include('visits.php');
                         required
                       ></textarea>
 
-                      <input type="hidden" name="_next" value="https://jancii.com/thankyou.html">
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="https://jancii.com/thankyou.html"
+                      />
 
                       <button type="submit">
                         SEND MESSAGE <i class="fa-solid fa-chevron-right"></i>
                       </button>
-                
                     </form>
                   </article>
                   <p class="easterEgg">

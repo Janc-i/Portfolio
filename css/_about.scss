@@ -306,7 +306,10 @@
 }
 .article5 {
   padding: 0 30px;
-  p {
+  .note {
+    line-height: 1.7;
+    color: var(--text-light-grey);
+    font-size: 15px;
     i {
       color: var(--text-mood);
       font-size: 20px;
@@ -316,9 +319,9 @@
     a {
       text-decoration: underline;
       cursor: pointer;
-      color: inherit;
+      color: var(--text-light-grey);
       &:visited {
-        color: inherit;
+        color: var(--text-light-grey);
       }
     }
   }
