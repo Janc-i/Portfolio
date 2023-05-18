@@ -13,11 +13,11 @@ include('visits.php');
 
     <meta
       name="keywords"
-      content="Janči, Janci, front-end developer, web developer, quality assurance engineer, QA engineer, tester, portfolio"
+      content="Janči, Janci, front-end developer, web developer, developer, quality assurance engineer, QA engineer, tester, portfolio"
     />
     <meta
       name="description"
-      content="I am an aspiring front-end developer and quality assurance engineer with a passion for creating beautiful, responsive and user-friendly websites and applications."
+      content="Aspiring front-end developer and QA engineer with a passion for creating beautiful, responsive and user-friendly websites and applications."
     />
     <meta name="author" content="Janči" />
     <meta
@@ -26,7 +26,7 @@ include('visits.php');
     />
     <meta
       property="og:description"
-      content="I am an aspiring front-end developer and quality assurance engineer with a passion for creating beautiful, responsive and user-friendly websites and applications."
+      content="Aspiring front-end developer and QA engineer with a passion for creating beautiful, responsive and user-friendly websites and applications."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.jancii.com/" />
