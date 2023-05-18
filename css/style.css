@@ -1520,11 +1520,30 @@ body::-webkit-scrollbar-thumb {
   #aboutMe .main .article2 {
     width: 100%;
   }
+  #aboutMe .main .article2:before {
+    content: "";
+    background: none;
+    width: 0;
+    height: 0;
+  }
   #myServices .main {
     flex-direction: column;
   }
+  #myServices .main .article2:before {
+    content: "" !important;
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
   #pricing .main article {
     width: 100% !important;
+  }
+  #pricing .main .article1:before,
+  #pricing .main .article1:after {
+    content: "" !important;
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
   }
   #funFacts .main {
     flex-wrap: wrap;
@@ -1532,6 +1551,12 @@ body::-webkit-scrollbar-thumb {
   #funFacts .main article {
     box-sizing: border-box;
     flex-basis: 50%;
+  }
+  #funFacts .main .article3:before {
+    content: "" !important;
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
   }
 }
 #resume .main {
