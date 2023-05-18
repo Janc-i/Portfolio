@@ -2750,7 +2750,6 @@ input:active ::placeholder {
   }
   .card {
     width: 585px;
-    height: 600px;
   }
   .description {
     max-height: none !important;
@@ -2898,6 +2897,10 @@ input:active ::placeholder {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
   }
+  .card:before {
+    top: 30px;
+    height: calc(100vh - 200px) !important;
+  }
   .card .photo {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2998,7 +3001,7 @@ input:active ::placeholder {
     background: none;
   }
 }
-@media (max-height: 587px) and (min-width: 701px) {
+@media (max-height: 587px) and (max-width: 1160px) {
   .navigationPanel li {
     height: 44px;
   }
@@ -3017,5 +3020,17 @@ input:active ::placeholder {
   }
   .navbarBottom .activeButton p {
     transform: translateY(-16px) !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 1160px) {
+  .card {
+    width: 585px;
+    min-height: 755px;
+  }
+  .card .cardInfo {
+    margin-top: 16px;
+  }
+  .card .cardInfo .cardName {
+    margin-top: 13px;
   }
 }/*# sourceMappingURL=style.css.map */
