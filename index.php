@@ -258,30 +258,37 @@ include('visits.php');
                     <i class="fa-solid fa-star"></i>
 
                     <p>
-                      Having recently completed a Front-end Development and QA
-                      Manual Testing course, I have acquired a diverse range of
-                      skills and techniques in HTML, CSS, and JavaScript
-                      alongside with having honed my testing abilities, enabling
-                      me to meticulously analyze and assess software products
-                      for optimal functionality and user experience. You can
-                      check some of my work in the
+                      Upon the recent completion of Front-end Development and QA
+                      Testing courses, I have acquired a diverse range of skills
+                      and techniques in HTML, CSS, and JavaScript, which I have
+                      incorporated into the development of this website.
+                      <br />
+                      You can check some of my other work in the
                       <span
                         class="projectsLink hoverElement"
                         onclick="document.querySelector('.projectsButton').click()"
                         ><span></span><span>Projects</span></span
                       >
-                      section. <br /><br />
-                      I am currently seeking an opportunity to gain practical,
-                      hands-on experience in the fields of Front-End Development
-                      and Quality Assurance, and apply the knowledge and skills
-                      I have acquired, whether it be through work or internship.
-                      Despite being based in Slovakia, I am highly motivated and
-                      fully capable of working remotely with a team located
-                      anywhere in the world. I am commited to delivering
-                      high-quality work and continuously improving my abilities.
-                      I am eager to contribute my knowledge and talent to a
-                      dynamic and innovative company and to learn from
-                      experienced professionals. <br /><br />
+                      section.
+                      <br /><br />
+                      Furthermore, my immersion in the field of Quality
+                      Assurance has allowed me to deepen my understanding of
+                      testing principles and expand my knowledge of various
+                      testing methodologies. This involvement has provided me
+                      with a fresh perspective on software evaluation,
+                      empowering me to thoroughly analyze and assess software
+                      products for optimal functionality and user experience.
+                      <br /><br />
+                      I am seeking an opportunity to gain practical, hands-on
+                      experience in these fields, and apply the knowledge and
+                      skills I have acquired, whether it be through work or
+                      internship. Despite being based in Slovakia, I am highly
+                      motivated and fully capable of working remotely with a
+                      team located anywhere in the world. I am commited to
+                      delivering high-quality work and continuously improving my
+                      abilities. I am eager to contribute my knowledge and
+                      talent and to learn from experienced professionals.
+                      <br /><br />
                       If there are any available opportunities that align with
                       my knowledge and experience, I would be honored to hear
                       from you. <br /><br /><br />
@@ -349,12 +356,12 @@ include('visits.php');
                       >design</a
                     >.
                     <p class="inspect">
-                      <i class="fa-solid fa-magnifying-glass"></i>
                       <a
                         class="hoverElement"
                         href="https://github.com/Janc-i/Portfolio"
                         target="_blank"
-                        >Inspect Source Code</a
+                        ><i class="fa-solid fa-magnifying-glass"></i> Source
+                        Code</a
                       >
                     </p>
                   </div>
@@ -418,8 +425,8 @@ include('visits.php');
                         <span>Pharmaceutical industry</span><br />
                         Responsible for warehouse management and supervising a
                         team of 8 employees, supplier and customer care,
-                        handling logistics, interviewing, mentoring, reporting,
-                        problem-solving
+                        handling logistics, interviewing, coaching, mentoring,
+                        reporting, problem-solving
                       </p>
                     </div>
                     <div class="employer">
@@ -514,8 +521,8 @@ include('visits.php');
                       <h5>QA Manual Tester <span>Course</span></h5>
                       <span class="educationPlace">Skillmea</span>
                       <p>
-                        Testing scenarios, Test cases, Methodologies, Data
-                        validation, Documentation
+                        Test plan, Bug reporting, Test methods, types,
+                        strategies, Qualitative attributes
                       </p>
                       <a
                         class="hoverElement"
@@ -1115,7 +1122,7 @@ include('visits.php');
                           ></iframe>
                         </div>
                         <h4>Cypress.io</h4>
-                        <p>My first automated test using Cypress.io</p>
+                        <p>My first automation test using Cypress.io</p>
                       </div></a
                     >
                   </article>
@@ -1594,23 +1601,31 @@ include('visits.php');
                       <article class="article3">
                         <i class="fa-solid fa-user-tag"></i>
                         <p>
-                          When it comes to describing myself as a potential
-                          candidate for a job, I take great pride in
-                          highlighting that I am a perfectionist at heart, and
-                          possess a great level of precision and accuracy when
-                          it comes to paying attention to even the smallest of
-                          details. I am highly sensitive to any potential bugs
-                          or errors that may arise, always going the extra mile
-                          to ensure that everything is working seamlessly and to
-                          the best of my ability. I consider myself a
-                          quick-to-learn individual who adapts to new situations
-                          and challenges with ease, which has allowed me to
-                          consistently excel in my past roles. Additionally, my
-                          analytical and logical thinking enables me to
-                          deconstruct complex problems into their core
-                          components, effectively developing efficient solutions
-                          that address the root of an issue.
+                          When it comes to describing myself as a prospective
+                          job candidate, I place significant importance on
+                          expressing that being a perfectionist is an integral
+                          part of who I am. I possess a great level of precision
+                          and accuracy when it comes to paying attention to even
+                          the smallest of details. I am highly sensitive to any
+                          potential bugs, errors or conflicts that may arise,
+                          always going the extra mile to ensure that everything
+                          is working seamlessly and to the best of my ability.
                           <br /><br />
+                          I have an insatiable love for seeking ways to improve
+                          and simplify processes, leading to increased
+                          efficiency. Not only do I apply this mindset to
+                          optimize my own workflow, but I also enjoy assisting
+                          others in becoming more efficient. By sharing my
+                          ideas, I empower them to streamline their work and
+                          achieve greater productivity. My analytical and
+                          logical thinking enables me to deconstruct complex
+                          problems into their core components, effectively
+                          developing efficient solutions that address the root
+                          of an issue. <br /><br />I consider myself a reliable,
+                          non-confrontational, open-minded and quick-to-learn
+                          individual who adapts to new situations and challenges
+                          with ease, which has allowed me to consistently excel
+                          in my past roles. <br /><br />
                           Although I may not be the best at what I do, I
                           consistently give my best effort and push myself to my
                           limits. My greatest fulfillment comes from ensuring

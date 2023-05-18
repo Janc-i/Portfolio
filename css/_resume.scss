@@ -13,6 +13,7 @@
     .employer {
       position: relative;
       padding: 25px 0;
+      padding-bottom: 40px; //expand when adding more courses
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -117,7 +118,7 @@
     .education {
       position: relative;
       padding: 25px 0;
-      padding-bottom: 40px; //change when adding more courses
+      padding-bottom: 40px; //lower when adding more courses
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -465,6 +466,10 @@
     article {
       box-sizing: border-box;
       width: 100%;
+
+      .employer {
+        padding-bottom: 25px;
+      }
     }
 
     .article1::after {

@@ -1423,15 +1423,39 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-light-grey);
 }
 .article5 .inspect {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 100px;
+  margin-bottom: 75px;
 }
 .article5 .inspect a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  font-variant: small-caps;
   color: inherit;
 }
 .article5 .inspect a:visited {
   color: inherit;
+}
+.article5 .inspect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, var(--text-lightest-grey), transparent);
+}
+.article5 .inspect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, var(--text-lightest-grey), transparent);
 }
 
 #visitors .main article {
@@ -1450,8 +1474,9 @@ body::-webkit-scrollbar-thumb {
 }
 #visitors .main article p.visitors {
   font-weight: 600;
-  width: 140px;
+  width: 200px;
   font-size: 50px;
+  font-family: monospace;
   margin: 0;
   text-align: center;
 }
@@ -1522,6 +1547,7 @@ body::-webkit-scrollbar-thumb {
 #resume .main article .employer {
   position: relative;
   padding: 25px 0;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1906,6 +1932,9 @@ body::-webkit-scrollbar-thumb {
   #resume .main article {
     box-sizing: border-box;
     width: 100%;
+  }
+  #resume .main article .employer {
+    padding-bottom: 25px;
   }
   #resume .main .article1::after {
     background: none;
