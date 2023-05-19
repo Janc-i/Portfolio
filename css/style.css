@@ -2895,6 +2895,9 @@ input:active ::placeholder {
   .card {
     width: 585px;
   }
+  .card .cardSocialIcons {
+    width: 160px;
+  }
   .description {
     max-height: none !important;
     width: 585px;
