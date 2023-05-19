@@ -324,7 +324,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>5115<br />Lines of HTML/CSS Code</p>
+                    <p>4971<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
@@ -1714,9 +1714,10 @@ include('visits.php');
                           <i class="fa-solid fa-circle-check"></i
                           ><span>I shouldn't be afraid to ask for help.</span>
                           It's perfectly fine to look for help or seek guidance
-                          when necessary, particularly when I am new in the field.
-                          In fact, knowing where and how to seek help can be a
-                          great way to learn and grow my skills as a developer.
+                          when necessary, particularly when I am new in the
+                          field. In fact, knowing where and how to seek help can
+                          be a great way to learn and grow my skills as a
+                          developer.
                         </p>
                         <br />
                         <p>
