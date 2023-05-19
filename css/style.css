@@ -2554,7 +2554,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 25px;
-  resize: none;
+  resize: vertical;
 }
 
 textarea::-webkit-scrollbar {
@@ -2616,6 +2616,66 @@ input::-moz-placeholder {
   color: var(--text-quote-grey);
 }
 
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  color: var(--text-quote-grey);
+}
+
 textarea::-moz-placeholder, input::-moz-placeholder {
   color: var(--text-quote-grey);
 }
@@ -2633,6 +2693,90 @@ input[type=text]:active,
 input[type=email]:active {
   color: var(--text-mood);
   border: 2px solid var(--text-mood);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
+}
+
+textarea:focus::-moz-placeholder,
+textarea:active::-moz-placeholder,
+input:focus::-moz-placeholder,
+input:active ::-moz-placeholder {
+  color: var(--text-dark-grey);
 }
 
 textarea:focus::-moz-placeholder,

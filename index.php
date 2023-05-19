@@ -1798,7 +1798,7 @@ include('visits.php');
                     <p>
                       <span>Phone</span
                       ><span class="hoverElement"
-                        ><a href="tel:">Ask for number</a></span
+                        ><a href="tel:">Included in CV</a></span
                       >
                     </p>
                     <p><span>Availability</span><span>Available</span></p>
