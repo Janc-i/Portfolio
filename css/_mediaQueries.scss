@@ -416,7 +416,7 @@
 }
 
 //------------------------------------------------------------------
-@media (max-height: 587px) and (max-width: 1160px) {
+@media (max-height: 587px) and (min-width: 701px) and (max-width: 1160px) {
   .navigationPanel {
     li {
       height: 44px;
