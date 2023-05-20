@@ -32,7 +32,7 @@ include('visits.php');
     <meta property="og:url" content="https://www.jancii.com/" />
     <meta
       property="og:image"
-      content="https://www.jancii.com/img/portfolio.png"
+      content="https://www.jancii.com/img/portfolio.webp"
     />
     <meta property="og:image:alt" content="Janči" />
 
@@ -237,7 +237,7 @@ include('visits.php');
                   </article>
                   <article class="article2">
                     <i class="qaIconServices"
-                      ><img src="./img/qa.png" alt=""
+                      ><img src="./img/qa.webp" alt=""
                     /></i>
                     <h4>Quality Assurance</h4>
                     <p>
@@ -838,7 +838,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/bigBang.png"
+                            src="./img/projects/bigBang.webp"
                             alt="Big Bang Theory Game"
                           />
                         </div>
@@ -858,7 +858,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/converter.png"
+                            src="./img/projects/converter.webp"
                             alt="Multi-Converter"
                           />
                         </div>
@@ -875,7 +875,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/shoot.png"
+                            src="./img/projects/shoot.webp"
                             alt="Catch or Shoot Game"
                           />
                         </div>
@@ -891,7 +891,7 @@ include('visits.php');
                     >
                       <div class="projectWrapper">
                         <div>
-                          <img src="./img/projects/dice.png" alt="Dice Game" />
+                          <img src="./img/projects/dice.webp" alt="Dice Game" />
                         </div>
                         <h4>Dice Game</h4>
                         <p>Strategic game based on the rules of Blackjack</p>
@@ -906,7 +906,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/ticTacToe.png"
+                            src="./img/projects/ticTacToe.webp"
                             alt="Tic Tac Toe"
                           />
                         </div>
@@ -924,7 +924,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/calculator.png"
+                            src="./img/projects/calculator.webp"
                             alt="Calculator"
                           />
                         </div>
@@ -942,7 +942,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/montyHall.png"
+                            src="./img/projects/montyHall.webp"
                             alt="Monty Hall Problem"
                           />
                         </div>
@@ -961,7 +961,10 @@ include('visits.php');
                     >
                       <div class="projectWrapper">
                         <div>
-                          <img src="./img/projects/todo.png" alt="To-do List" />
+                          <img
+                            src="./img/projects/todo.webp"
+                            alt="To-do List"
+                          />
                         </div>
                         <h4>To-do list</h4>
                         <p>Keep track of tasks that need to be accomplished</p>
@@ -976,7 +979,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/apiSearch.png"
+                            src="./img/projects/apiSearch.webp"
                             alt="Search using API"
                           />
                         </div>
@@ -993,7 +996,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/turtle.png"
+                            src="./img/projects/turtle.webp"
                             alt="Catch The Turtle"
                           />
                         </div>
@@ -1011,7 +1014,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/particle.png"
+                            src="./img/projects/particle.webp"
                             alt="Particle Animation"
                           />
                         </div>
@@ -1028,7 +1031,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/tilde.png"
+                            src="./img/projects/tilde.webp"
                             alt="Tilde Web Clone"
                           />
                         </div>
@@ -1045,7 +1048,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/zeus.png"
+                            src="./img/projects/zeus.webp"
                             alt="Zeus Web Clone"
                           />
                         </div>
@@ -1062,7 +1065,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/nightfury.png"
+                            src="./img/projects/nightfury.webp"
                             alt="Nightfury Web Clone"
                           />
                         </div>
@@ -1079,7 +1082,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/mtmoto.png"
+                            src="./img/projects/mtmoto.webp"
                             alt="Mt Moto Web Clone"
                           />
                         </div>
@@ -1096,7 +1099,7 @@ include('visits.php');
                       <div class="projectWrapper">
                         <div>
                           <img
-                            src="./img/projects/premy.png"
+                            src="./img/projects/premy.webp"
                             alt="Premy Web Clone"
                           />
                         </div>

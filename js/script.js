@@ -619,14 +619,14 @@ function updateTheme() {
     themeButton.querySelector("i").classList.remove("fa-moon");
     themeButton.querySelector("i").classList.add("fa-sun");
     card.classList.add("darkCardCopy");
-    qaIconServices.innerHTML = `<img src="./img/qa-dark.png" alt=""/>`;
+    qaIconServices.innerHTML = `<img src="./img/qa-dark.webp" alt=""/>`;
   } else {
     body.classList.remove("dark");
     bubbles.classList.remove("darkBubbles");
     themeButton.querySelector("i").classList.remove("fa-sun");
     themeButton.querySelector("i").classList.add("fa-moon");
     card.classList.remove("darkCardCopy");
-    qaIconServices.innerHTML = `<img src="./img/qa.png" alt=""/>`;
+    qaIconServices.innerHTML = `<img src="./img/qa.webp" alt=""/>`;
   }
 }
 updateTheme();

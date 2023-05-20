@@ -429,7 +429,7 @@ body::-webkit-scrollbar-thumb {
 .photo {
   height: 519px;
   width: 100%;
-  background-image: url("../img/photo.png");
+  background-image: url("../img/photo.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1741,7 +1741,7 @@ body::-webkit-scrollbar-thumb {
 #resume .main .testerIcon h5::after {
   content: "";
   position: absolute;
-  background-image: url(" ../img/qa-grey.png ");
+  background-image: url(" ../img/qa-grey.webp ");
   background-size: cover;
   height: 25px;
   width: 25px;
@@ -1767,7 +1767,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   opacity: 0.5;
   position: absolute;
-  background-image: url(" ../img/excel.png ");
+  background-image: url(" ../img/excel.webp ");
   background-size: cover;
   height: 25px;
   width: 25px;
@@ -1778,7 +1778,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   opacity: 0.5;
   position: absolute;
-  background-image: url(" ../img/word.png ");
+  background-image: url(" ../img/word.webp ");
   background-size: cover;
   height: 25px;
   width: 25px;
@@ -1789,7 +1789,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   opacity: 0.5;
   position: absolute;
-  background-image: url(" ../img/photoshop.png ");
+  background-image: url(" ../img/photoshop.webp ");
   background-size: cover;
   height: 25px;
   width: 25px;
