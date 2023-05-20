@@ -571,14 +571,22 @@ rgbbutton.addEventListener("click", showHueSlider);
 body.addEventListener("click", hideHueSlider);
 
 //prevent page scroll on adjusting slider
-hueSlider.addEventListener("touchstart", function (event) {
-  event.stopPropagation();
-});
+hueSlider.addEventListener(
+  "touchstart",
+  function (event) {
+    event.stopPropagation();
+  },
+  { passive: true }
+);
 
-hueSlider.addEventListener("touchmove", function (event) {
-  event.stopPropagation();
-  // event.preventDefault();
-});
+hueSlider.addEventListener(
+  "touchmove",
+  function (event) {
+    event.stopPropagation();
+    // event.preventDefault();
+  },
+  { passive: true }
+);
 
 hueSlider.addEventListener("touchend", function (event) {
   hueSlider.classList.add("hideContent");
