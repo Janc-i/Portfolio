@@ -53,6 +53,7 @@ include('visits.php');
     />
 
     <link rel="icon" href="./favicon.ico" />
+    <link rel="preload" href="./img/photo.webp" as="image" />
 
     <title>Janči</title>
 
@@ -157,9 +158,11 @@ include('visits.php');
                   aria-label="Instagram"
                   ><i class="fa-brands fa-instagram hoverElement"></i
                 ></a>
-                <a href="https://twitter.com/Jon_ELLL" target="_blank"
-                aria-label="Twitter"
-                rel="noopener noreferrer"
+                <a
+                  href="https://twitter.com/Jon_ELLL"
+                  target="_blank"
+                  aria-label="Twitter"
+                  rel="noopener noreferrer"
                   ><i class="fa-brands fa-twitter hoverElement"></i
                 ></a>
                 <a
@@ -169,9 +172,11 @@ include('visits.php');
                   rel="noopener noreferrer"
                   ><i class="fa-brands fa-linkedin hoverElement"></i
                 ></a>
-                <a href="https://github.com/Janc-i/Portfolio" target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
+                <a
+                  href="https://github.com/Janc-i/Portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                   ><i class="fa-brands fa-github hoverElement"></i
                 ></a>
               </div>
