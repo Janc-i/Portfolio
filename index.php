@@ -146,22 +146,32 @@ include('visits.php');
                 <a
                   href="https://www.facebook.com/profile.php?id=100092690254755"
                   target="_blank"
+                  aria-label="Facebook"
+                  rel="noopener noreferrer"
                   ><i class="fa-brands fa-facebook hoverElement"></i
                 ></a>
                 <a
                   href="https://www.instagram.com/jon.el/?theme=dark"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
                   ><i class="fa-brands fa-instagram hoverElement"></i
                 ></a>
                 <a href="https://twitter.com/Jon_ELLL" target="_blank"
+                aria-label="Twitter"
+                rel="noopener noreferrer"
                   ><i class="fa-brands fa-twitter hoverElement"></i
                 ></a>
                 <a
                   href="https://www.linkedin.com/in/jan%C4%8Di-l-637012273/"
                   target="_blank"
+                  aria-label="LinkedIn"
+                  rel="noopener noreferrer"
                   ><i class="fa-brands fa-linkedin hoverElement"></i
                 ></a>
                 <a href="https://github.com/Janc-i/Portfolio" target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
                   ><i class="fa-brands fa-github hoverElement"></i
                 ></a>
               </div>
@@ -353,6 +363,7 @@ include('visits.php');
                       class="hoverElement"
                       href="https://themeforest.net/item/ryancv-vcard-resume-wordpress-theme/22890097"
                       target="_blank"
+                      rel="noopener noreferrer"
                       >design</a
                     >.
                     <p class="inspect">
@@ -360,6 +371,7 @@ include('visits.php');
                         class="hoverElement"
                         href="https://github.com/Janc-i/Portfolio"
                         target="_blank"
+                        rel="noopener noreferrer"
                         ><i class="fa-solid fa-magnifying-glass"></i> Source
                         Code</a
                       >
