@@ -69,7 +69,10 @@
 
           img,
           iframe {
+            aspect-ratio: 16 / 9;
             width: 100%;
+            max-width: 400px;
+            max-height: 225px;
             transition: transform 0.8s ease;
           }
 
