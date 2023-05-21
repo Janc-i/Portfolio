@@ -2043,7 +2043,7 @@ body::-webkit-scrollbar-thumb {
 }
 .projects .article1 a .projectWrapper div img,
 .projects .article1 a .projectWrapper div iframe {
-  max-height: 225px;
+  width: 100%;
   transition: transform 0.8s ease;
 }
 .projects .article1 a .projectWrapper div:before {
