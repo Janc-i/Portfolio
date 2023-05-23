@@ -339,7 +339,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>5036<br />Lines of HTML/CSS Code</p>
+                    <p>5035<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
@@ -860,7 +860,7 @@ include('visits.php');
                             alt="Weather app"
                           />
                         </div>
-                        <h4>Weather app</h4>
+                        <h4>Weather App</h4>
                         <p>
                           Explore current weather in your location with 4-day
                           forecast with EU or US units
