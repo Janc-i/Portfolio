@@ -117,32 +117,24 @@ getGeolocation()
     });
 
     //weekday
-    let weekdayNumber = data.current_weather.is_day;
-    switch (weekdayNumber) {
-      case 0:
-        weekday.innerHTML = "Monday";
-        break;
-      case 1:
-        weekday.innerHTML = "Tuesday";
-        break;
-      case 2:
-        weekday.innerHTML = "Wednesday";
-        break;
-      case 3:
-        weekday.innerHTML = "Thursday";
-        break;
-      case 4:
-        weekday.innerHTML = "Friday";
-        break;
-      case 5:
-        weekday.innerHTML = "Saturday";
-        break;
-      case 6:
-        weekday.innerHTML = "Sunday";
-        break;
-      default:
-        weekday.innerHTML = "Invalid day";
-    }
+
+    let dateX = new Date();
+    let weekdayX = dateX.getDay();
+
+    let weekdays = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+
+    // Get the weekday name based on the index
+    let weekdayName = weekdays[weekdayX];
+
+    weekday.innerHTML = weekdayName;
 
     //date
     let dateString = data.current_weather.time;
@@ -301,28 +293,32 @@ getGeolocation()
 
     //forecast weekdays
     forecastWeekdays.forEach(function (forecastWeekday) {
-      data.current_weather.is_day = data.current_weather.is_day + 1;
-      switch (data.current_weather.is_day) {
+      if (weekdayX < 6) {
+        weekdayX = weekdayX + 1;
+      } else {
+        weekdayX = 0;
+      }
+      switch (weekdayX) {
         case 0:
-          forecastWeekday.innerHTML = "Mon";
+          forecastWeekday.innerHTML = "Sun";
           break;
         case 1:
-          forecastWeekday.innerHTML = "Tue";
+          forecastWeekday.innerHTML = "Mon";
           break;
         case 2:
-          forecastWeekday.innerHTML = "Wed";
+          forecastWeekday.innerHTML = "Tue";
           break;
         case 3:
-          forecastWeekday.innerHTML = "Thu";
+          forecastWeekday.innerHTML = "Wed";
           break;
         case 4:
-          forecastWeekday.innerHTML = "Fri";
+          forecastWeekday.innerHTML = "Thu";
           break;
         case 5:
-          forecastWeekday.innerHTML = "Sat";
+          forecastWeekday.innerHTML = "Fri";
           break;
         case 6:
-          forecastWeekday.innerHTML = "Sun";
+          forecastWeekday.innerHTML = "Sat";
           break;
         default:
           forecastWeekday.innerHTML = "Error";
