@@ -51,6 +51,7 @@
     }
 
     a {
+      position: relative;
       color: var(--text-dark-grey);
       text-decoration: none;
       &:visited {
@@ -153,5 +154,29 @@
   }
   .activeProjectButton {
     color: var(--text-mood) !important;
+  }
+
+  .newIcon {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: rgb(182, 0, 0);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 5px;
+    z-index: 1;
+    animation: pulsing 1s infinite;
+  }
+
+  @keyframes pulsing {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
   }
 }

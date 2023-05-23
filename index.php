@@ -339,7 +339,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>4992<br />Lines of HTML/CSS Code</p>
+                    <p>5036<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
@@ -846,6 +846,27 @@ include('visits.php');
                 </header>
                 <div class="main">
                   <article class="article1">
+                    <a
+                      class="project app weather hoverElement"
+                      href="./projects/apps/weather/weather.html"
+                      style="display: block"
+                      target="_blank"
+                    >
+                      <span class="newIcon">NEW</span>
+                      <div class="projectWrapper">
+                        <div>
+                          <img
+                            src="./img/projects/weather.webp"
+                            alt="Weather app"
+                          />
+                        </div>
+                        <h4>Weather app</h4>
+                        <p>
+                          Explore current weather in your location with 4-day
+                          forecast with EU or US units
+                        </p>
+                      </div>
+                    </a>
                     <a
                       class="project game bigBang hoverElement"
                       href="./projects/games/bigBang/bigBang.html"
