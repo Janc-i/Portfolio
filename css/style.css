@@ -2111,25 +2111,34 @@ body::-webkit-scrollbar-thumb {
 .projects .activeProjectButton {
   color: var(--text-mood) !important;
 }
-.projects .newIcon {
+.projects .newIcon,
+.projects .newIconPulse {
   position: absolute;
   color: white;
   top: -10px;
   right: -8px;
+  width: 34px;
+  height: 19px;
   background-color: rgb(182, 0, 0);
-  border-radius: 8px;
+  border-radius: 9px;
   font-weight: bold;
-  font-size: 12px;
-  padding: 3px 5px;
+  font-size: 11px;
+  padding: 4px 0px;
   z-index: 1;
-  animation: pulsing 1s ease-in infinite;
+}
+.projects .newIconPulse {
+  z-index: 1;
+  animation: pulsing 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  box-shadow: inset 0px 0px 2px rgb(255, 255, 255);
 }
 @keyframes pulsing {
   0% {
     transform: scale(1);
+    opacity: 0.8;
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.6);
+    opacity: 0;
   }
 }
 

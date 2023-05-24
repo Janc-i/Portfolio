@@ -223,7 +223,7 @@ include('visits.php');
                       Welcome to my website. This is my own work and my
                       showroom. It serves as a demonstration of my skills and
                       knowledge and to provide a deeper understanding of my
-                      personality. Feel free to browse around to get to know me
+                      personality. Feel free to browse around and get to know me
                       better.
                     </p>
                   </article>
@@ -286,7 +286,7 @@ include('visits.php');
                       >
                       section.
                       <br /><br />
-                      Furthermore, my immersion in the field of Quality
+                      Furthermore, my brief exposure to the field of Quality
                       Assurance has allowed me to deepen my understanding of
                       testing principles and expand my knowledge of various
                       testing methodologies. This involvement has provided me
@@ -339,7 +339,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>5035<br />Lines of HTML/CSS Code</p>
+                    <p>5045<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
@@ -517,7 +517,7 @@ include('visits.php');
                       <h5>Grammar School</h5>
                       <span class="educationPlace">GJAR, Prešov</span>
                       <p>
-                        Comprehensive secondary education with leaving
+                        Comprehensive secondary education with school-leaving
                         examination
                       </p>
                     </div>
@@ -852,6 +852,7 @@ include('visits.php');
                       style="display: block"
                       target="_blank"
                     >
+                      <span class="newIconPulse"></span>
                       <span class="newIcon">NEW</span>
                       <div class="projectWrapper">
                         <div>
@@ -862,8 +863,9 @@ include('visits.php');
                         </div>
                         <h4>Weather App</h4>
                         <p>
-                          Explore current weather in your location with 4-day
-                          forecast with EU or US units
+                          Stay informed about the latest weather conditions in
+                          your area and plan ahead with a 4-day forecast. EU or
+                          US units
                         </p>
                       </div>
                     </a>
@@ -952,7 +954,6 @@ include('visits.php');
                         <p>Classic paper-and-pencil game</p>
                       </div></a
                     >
-
                     <a
                       class="project app calculator hoverElement"
                       href="./projects/apps/calculator/calculator.html"
