@@ -166,7 +166,7 @@ include('visits.php');
                   ><i class="fa-brands fa-twitter hoverElement"></i
                 ></a>
                 <a
-                  href="https://www.linkedin.com/in/jan%C4%8Di-l-637012273/"
+                  href="https://www.linkedin.com/in/j%C3%A1n-l-637012273/"
                   target="_blank"
                   aria-label="LinkedIn"
                   rel="noopener noreferrer"
