@@ -231,7 +231,7 @@ include('visits.php');
                     <p><span>Age</span><span class="myAge"></span></p>
                     <p><span>Residence</span><span>Slovakia</span></p>
                     <p><span>Address</span><span>Prešov, Slovakia</span></p>
-                    <p><span>Availability</span><span>Available</span></p>
+                    <p><span>Availability</span><span>Occupied</span></p>
                   </article>
                 </div>
               </section>
@@ -339,7 +339,7 @@ include('visits.php');
                 <div class="main">
                   <article class="article1">
                     <i class="fa-brands fa-html5"></i>
-                    <p>5045<br />Lines of HTML/CSS Code</p>
+                    <p>5061<br />Lines of HTML/CSS Code</p>
                   </article>
 
                   <article class="article2">
@@ -434,7 +434,19 @@ include('visits.php');
                       <span>EXPERIENCE</span>
                     </h4>
                     <div class="employer">
-                      <span class="period"> 2017 - 2023 </span>
+                      <span class="period actual"> 2023 - present </span>
+                      <h5 class="pt">IT Tester</h5>
+                      <span class="company">Rare Crew s.r.o.</span>
+                      <p>
+                        <span>IT industry</span><br />
+                        Conducting comprehensive software testing, executing
+                        test cases, identifying defects, collaborating with
+                        developers, documenting results, validating
+                        requirements, enhancing product usability
+                      </p>
+                    </div>
+                    <div class="employer">
+                      <span class="period"> 2017 - 2022 </span>
                       <h5 class="pt">Warehouse Manager</h5>
                       <h6 class="pt">+ Purchase and Sales Support</h6>
                       <span class="company">Pharm Trade a.s.</span>
@@ -452,7 +464,7 @@ include('visits.php');
                       <span class="company">Tvareko s.r.o.</span>
                       <p>
                         <span>Construction industry</span><br />
-                        coordinating building material production - seasonal job
+                        Coordinating building material production - seasonal job
                       </p>
                     </div>
                     <div class="employer">
@@ -1844,7 +1856,7 @@ include('visits.php');
                         ><a href="tel:">Included in CV</a></span
                       >
                     </p>
-                    <p><span>Availability</span><span>Available</span></p>
+                    <p><span>Availability</span><span>Occupied</span></p>
                   </article>
                 </div>
               </section>
