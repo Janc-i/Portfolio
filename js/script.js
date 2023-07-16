@@ -604,7 +604,7 @@ const bubbles = document.querySelector(".background");
 const qaIconServices = document.querySelector(".qaIconServices");
 const card = document.querySelector(".card");
 
-let darkTheme = localStorage.getItem("darkTheme") === "true" || true; //last word changes default theme (dark-true)
+let darkTheme = localStorage.getItem("darkTheme") === "true" || false; //change default theme
 
 themeButton.addEventListener("click", () => {
   darkTheme = !darkTheme;
